@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	gapi "github.com/nolte/go-grafana-api"
-	"github.com/nolte/grafana-exporter/pkg/config"
+	"github.com/nolte/go-grafana-exporter/pkg/config"
 	uuid "github.com/nu7hatch/gouuid"
 	"github.com/spf13/viper"
 )

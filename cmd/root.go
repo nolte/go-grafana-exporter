@@ -6,9 +6,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	gapi "github.com/nolte/go-grafana-api"
-	export "github.com/nolte/grafana-exporter/cmd/export"
-	report "github.com/nolte/grafana-exporter/cmd/report"
-	exports "github.com/nolte/grafana-exporter/pkg/export"
+	export "github.com/nolte/go-grafana-exporter/cmd/export"
+	report "github.com/nolte/go-grafana-exporter/cmd/report"
+	exports "github.com/nolte/go-grafana-exporter/pkg/export"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

@@ -1,4 +1,4 @@
-module github.com/nolte/grafana-exporter
+module github.com/nolte/go-grafana-exporter
 
 go 1.13
 
@@ -10,5 +10,3 @@ require (
 	github.com/spf13/viper v1.4.0
 	gopkg.in/yaml.v2 v2.2.2
 )
-
-replace github.com/nolte/go-grafana-api => /home/nolte/gostuff/src/github.com/nolte/go-grafana-api

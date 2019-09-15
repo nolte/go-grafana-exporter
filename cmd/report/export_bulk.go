@@ -6,8 +6,8 @@ import (
 	//"hermesworld.com/grafana-reporter/grafana-reporter/schema"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/nolte/grafana-exporter/pkg/config"
-	"github.com/nolte/grafana-exporter/pkg/export"
+	"github.com/nolte/go-grafana-exporter/pkg/config"
+	"github.com/nolte/go-grafana-exporter/pkg/export"
 
 	"github.com/spf13/cobra"
 )

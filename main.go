@@ -1,7 +1,7 @@
 package main
 
 import (
-	cmd "github.com/nolte/grafana-exporter/cmd"
+	cmd "github.com/nolte/go-grafana-exporter/cmd"
 )
 
 func main() {

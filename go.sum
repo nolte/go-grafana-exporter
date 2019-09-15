@@ -64,6 +64,8 @@ github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
 github.com/nolte/go-grafana-api v0.0.0-20190913141536-22778bde4a70 h1:qTQgqpzPU7GRq+Z05YOyG7X/xNd0WYVBoZBEAvdLPGs=
 github.com/nolte/go-grafana-api v0.0.0-20190913141536-22778bde4a70/go.mod h1:oOFlSbSBLDVERaJWu9MTYB00Pxnmcaa3EEVB+t/1LQ8=
+github.com/nolte/go-grafana-api v0.0.1 h1:MbhtGmLAiIPMz7iei4KPjJNwb00OzeJ6xiKznrvov7s=
+github.com/nolte/go-grafana-api v0.0.1/go.mod h1:8jqTx5HAKXOHhvUEGui3booHRVT3njmRxLum48gSbYc=
 github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d h1:VhgPp6v9qf9Agr/56bj7Y/xa04UccTW04VP0Qed4vnQ=
 github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d/go.mod h1:YUTz3bUH2ZwIWBy3CJBeOBEugqcmXREj14T+iG/4k4U=
 github.com/oklog/ulid v1.3.1/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=

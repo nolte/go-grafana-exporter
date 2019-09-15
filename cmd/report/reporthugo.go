@@ -4,8 +4,8 @@ import (
 	"path"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/nolte/grafana-exporter/pkg/export"
-	"github.com/nolte/grafana-exporter/pkg/report"
+	"github.com/nolte/go-grafana-exporter/pkg/export"
+	"github.com/nolte/go-grafana-exporter/pkg/report"
 
 	"github.com/spf13/cobra"
 )

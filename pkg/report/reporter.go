@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/nolte/grafana-exporter/pkg/export"
+	"github.com/nolte/go-grafana-exporter/pkg/export"
 )
 
 var TemplateBase string
