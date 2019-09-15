@@ -1,0 +1,12 @@
+{{ define "REPORT_HEADER" -}}
+---
+title: {{ .ReportName }}
+{{- with .TimeRange }}
+from: {{ .From }}
+end: {{ .End }}
+{{ end -}}
+{{ if .Stage }}stage: {{ .Stage }}{{ end -}}
+{{ if .Description }}description: {{ .Description }}{{ end -}}
+---
+{{- end }}
+

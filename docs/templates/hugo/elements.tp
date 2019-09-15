@@ -1,0 +1,34 @@
+{{ define "REPORT_CONTENT_SECTION_GROUP_PANEL_IMAGE" -}}
+{{"{{"}}<figure src="{{ .ReportPath }}" height="{{.ExportSize.Height }}" width="{{.ExportSize.Width }}" {{ if .PanelTitle }}title="{{ .PanelTitle }}"{{ end }} link="{{ .PanelLink }}" {{ if .PanelDescription }}caption="{{ .PanelDescription }}"{{ end }}>{{"}}"}}
+{{ end }}
+
+
+{{ define "REPORT_CONTENT_SECTION" -}}
+
+
+{{ $overviewReport := index .ReportContent.Results "overview" }}
+## Overview
+{{ template "HUGO_ROW_SECTION" $overviewReport }}
+
+{{ $reportGroups := .ReportContent.Results }}
+{{- range $key,$reportGroup := $reportGroups }}
+{{- if ne $key "overview" -}}
+{{ template "REPORT_CONTENT_SECTION_GROUP" $reportGroup }}
+{{- end -}}
+{{- end }}
+
+{{- end }}
+
+{{ define "HUGO_ROW_SECTION" -}}
+
+{{"{{<"}} layoutcolums {{">}}"}}
+
+{{ range $panel := .Elements -}}
+{{"{{<"}} layoutcolum {{">}}"}}
+
+{{ template "REPORT_CONTENT_SECTION_GROUP_PANEL_IMAGE" $panel }}
+{{"{{</"}} layoutcolum {{">}}"}}
+{{ end }}
+{{"{{</"}} layoutcolums {{">}}"}}
+{{ end }}
+

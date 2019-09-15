@@ -1,0 +1,43 @@
+aliases:
+  - &anchorDashboardInfos
+    dashboardId: V3TD6Z5Wk
+    orgId: 1
+  - &anchorPanelOverviewExportSize
+    size:
+      width: 300
+      height: 160
+  - &anchorPanelDashboardVars
+    vars:
+      someTest: [1, 3]
+
+export:
+  overview:
+    title: "Overview"
+    description: "First test From Yaml"
+    elements:
+      - title: "Any Custom Panel Title"
+        description: "Any Custom Panel Description"
+        panel:
+          id: 4
+          <<: *anchorDashboardInfos
+          <<: *anchorPanelDashboardVars
+          exportName: firsttest2
+        <<: *anchorPanelOverviewExportSize
+      - panel:
+          id: 2
+          <<: *anchorDashboardInfos
+        <<: *anchorPanelOverviewExportSize
+  reportelements:
+    title: "Element"
+    description: "A Collection of Report Elements"
+    elements:
+      - title: "Any Custom Panel Title"
+        description: "Any Custom Panel Description"
+        panel:
+          id: 4
+          <<: *anchorDashboardInfos
+          <<: *anchorPanelDashboardVars
+          exportName: firsttest2
+      - panel:
+          id: 2
+          <<: *anchorDashboardInfos

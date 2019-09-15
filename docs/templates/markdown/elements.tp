@@ -1,0 +1,7 @@
+{{ define "REPORT_CONTENT_SECTION_GROUP_PANEL_IMAGE" -}}
+![{{ .PanelTitle }}]({{ .ReportPath }} "{{ .PanelTitle }}")
+{{ if .PanelDescription -}}
+_{{ .PanelDescription }}_
+{{ end -}}
+[original]({{ .PanelLink }})
+{{ end }}

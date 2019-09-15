@@ -1,0 +1,37 @@
+{{ define "REPORT" -}}
+{{ template "REPORT_HEADER" . }}
+{{ template "REPORT_CONTENT_SECTION" . }}
+
+{{- end }}
+
+{{ define "REPORT_CONTENT_SECTION" -}}
+
+{{ $reportGroups := .ReportContent.Results }}
+{{- range $key,$reportGroup := $reportGroups }}
+{{ template "REPORT_CONTENT_SECTION_GROUP" $reportGroup }}
+{{- end }}
+
+{{- end }}
+
+{{ define "REPORT_CONTENT_SECTION_GROUP" -}}
+## {{ if .Title -}}{{ .Title }}{{- end }}
+
+{{ if .Description -}}
+*Description:*
+{{ .Description }}
+{{- end }}
+
+{{ range $panel := .Elements -}}
+{{ template "REPORT_CONTENT_SECTION_GROUP_PANEL" $panel }}
+{{- end }}
+{{ end }}
+
+{{ define "REPORT_CONTENT_SECTION_GROUP_PANEL" -}}
+{{ if .Title }}### {{ .Title }}{{ else }}### {{ .PanelTitle }}{{ end }}
+
+{{ if .Description -}}
+{{ .Description }}
+{{ end -}}
+{{ template "REPORT_CONTENT_SECTION_GROUP_PANEL_IMAGE" . }}
+
+{{ end }}
